@@ -56,17 +56,14 @@ int main(void)
 	printf("This is Your Point Distance: %lf\n", Point_Distance);
 
 //This is No. 6
-	double Point_Distance = 0.0, X1 = 0.0, X2 = 0.0, Y1 = 0.0, Y2 = 0.0;
-	printf("Enter The Value Of The First X:   ");
-	scanf("%lf", &X1);
-	printf("Enter The Value Of The Second X:   ");
-	scanf("%lf", &X2);
-	printf("Enter The Value Of The First Y:   ");
-	scanf("%lf", &Y1);
-	printf("Enter The Value Of The Second Y:   ");
-	scanf("%lf", &Y2);
-	Point_Distance = Calc_Point_Distance(X1, X2, Y1, Y2);
-	printf("This is Your Point Distance: %lf\n", Point_Distance);
+	char Plain_Text, Encoded_Character;
+	int Offset = 0;
+	printf("What is the Character:  ");
+	scanf(" %c", &Plain_Text);
+	printf("Enter The Offset:   ");
+	scanf("%lf", &Offset);
+	Encoded_Character = Calc_Encoded_Character(Plain_Text, Offset);
+	printf("This is Your Encoded Character: %c \n", Encoded_Character);
 
 //This is No. 7
 	double Final_Y = 0.0, Y = 0.0, Z = 0.0, A = 0.0, X = 0.0;

@@ -21,5 +21,4 @@ double Calc_Point_Distance(double X1, double X2, double Y1, double Y2);
 char Calc_Encoded_Character(char Plain_Text, int offset);
 //This is No. 7
 double Calc_Final_Y(double Y, double Z, int A, double X);
-
 #endif
